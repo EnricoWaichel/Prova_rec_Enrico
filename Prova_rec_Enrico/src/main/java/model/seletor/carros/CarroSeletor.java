@@ -2,53 +2,53 @@ package model.seletor.carros;
 
 import model.seletor.BaseSeletor;
 
-public class CarroSeletor extends BaseSeletor{
-	
-	private String nomeMarca;
-	private String modelo;
-	private Integer anoInicial;
-	private Integer anoFinal;
-	
-	public boolean temFiltro() {
-		return  (this.nomeMarca != null && this.nomeMarca.trim().length() > 0) 
-			 || (this.modelo != null && this.modelo.trim().length() > 0) 
-			 || (this.anoInicial != null)
-		   	 || (this.anoFinal != null);
-	}
-	
-	public CarroSeletor() {
-		
-	}
+public class CarroSeletor extends BaseSeletor {
 
-	public String getNomeMarca() {
-		return nomeMarca;
-	}
+    private String nomeMarca;
+    private String modelo;
+    private Integer anoInicial;
+    private Integer anoFinal;
 
-	public void setNomeMarca(String nomeMarca) {
-		this.nomeMarca = nomeMarca;
-	}
+    public boolean temFiltro() {
+        return (this.nomeMarca != null && this.nomeMarca.trim().length() > 0)
+            || (this.modelo != null && this.modelo.trim().length() > 0)
+            || (this.anoInicial != null)
+            || (this.anoFinal != null);
+    }
 
-	public String getModelo() {
-		return modelo;
-	}
+    public CarroSeletor() {
 
-	public void setModelo(String modelo) {
-		this.modelo = modelo;
-	}
+    }
 
-	public Integer getAnoInicial() {
-		return anoInicial;
-	}
+    public String getNomeMarca() {
+        return nomeMarca;
+    }
 
-	public void setAnoInicial(Integer anoInicial) {
-		this.anoInicial = anoInicial;
-	}
+    public void setNomeMarca(String nomeMarca) {
+        this.nomeMarca = nomeMarca;
+    }
 
-	public Integer getAnoFinal() {
-		return anoFinal;
-	}
+    public String getModelo() {
+        return modelo;
+    }
 
-	public void setAnoFinal(Integer anoFinal) {
-		this.anoFinal = anoFinal;
-	}
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public Integer getAnoInicial() {
+        return anoInicial;
+    }
+
+    public void setAnoInicial(Integer anoInicial) {
+        this.anoInicial = anoInicial;
+    }
+
+    public Integer getAnoFinal() {
+        return anoFinal;
+    }
+
+    public void setAnoFinal(Integer anoFinal) {
+        this.anoFinal = anoFinal;
+    }
 }
